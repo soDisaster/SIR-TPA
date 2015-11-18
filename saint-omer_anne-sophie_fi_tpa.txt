@@ -1,0 +1,63 @@
+SIR - TPA
+----------
+
+1)              bricolage       Photo-video     jardinage       sport       informatique
+            
+Justine         70                  16              30              8               11 
+Jean            29                  27              28              25              26 
+Jacques         70                  16              30              8               11 
+Richard         70                  16              30              8               11 
+Édouard         29                  27              28              25              26 
+Claire          70                  16              30              8               11 
+Paul            29                  27              28              25              26 
+Élisabeth       70                  16              30              8               11 
+Pierre          29                  27              28              25              26 
+                        
+
+                                        Matrice du TP1
+                                        --------------
+                        
+                        
+Si on examine cette matrice on constate deux catégories d'utilisateurs. 
+
+                bricolage       Photo-video     jardinage       sport       informatique
+
+            
+Usager1             70              16            30            8               11 
+Usager2             29              27            28            25              26 
+
+
+La première catégorie regroupe les usagers qui ont fortement consulté le thème bricolage et beaucoup consulté le thème jardinage. 
+En comparaison ils ont peu consulté le thème Photo-video et informatique et encore moins le thème sport.
+
+
+La seconde catégorie regroupe les usagers qui ont consulté de manière équivalente chaque thème. Ce qui correspond en moyenne à 27 consultations par thème.
+
+
+2)              Photo-video     informatique        jardinage       sport       bricolage               
+
+
+
+Photo-video       0.0             0.6666666         0.85714287      0.6         1.0                     
+informatique    0.6666666           0.0             1.0           0.8333333     1.0                         
+jardinage       0.85714287          1.0             0.0           0.8333333     0.25                            
+sport             0.6             0.8333333         0.8333333       0.0         0.8                              
+bricolage         1.0               1.0             0.25            0.8         0.0 
+
+                                    
+                                    Matrice du TP2
+                                    --------------                              
+
+
+Dans l'exemple du TP2, nous avons gardé toutes les valeurs inférieures à 0,5.  Plus la distance est faible plus les thèmes sont proches. 
+On ne prend pas en compte la diagonale car il n'y a pas d'intérêt à évaluer la distance entre un thème et lui-même. Dans la matrice binaire on voit que les thèmes liés sont le bricolage et le jardinage.
+Si le seuil était plus élevé par exemple à 0,6 : les thèmes sport et Photo-video seraient liés.
+Et pour 0,66 c'est à dire 0,06 de plus on peut ajouter un lien entre les thèmes Photo-video et informatique.
+
+Plus le seuil est haut, moins nous serons précis dans le système de recommandations.    
+Plus le seuil est bas, plus nous serons précis mais moins de recommandations seront possibles.
+
+
+
+3) La matrice Usagers-Usagers serait utile pour distinguer les affinités entre les utilisateurs. On recommanderait donc à chaque utilisateur les personnes avec qui il s'entendrait le mieux. On peut penser à un réseau social.
+
